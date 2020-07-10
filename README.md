@@ -11,7 +11,12 @@ $ virtualenv -p python3 env
 $ source env/bin/activate
 (env)$ pip install -r requirements.txt
 ```
-#### 3. Run server (localhost)
+#### 3. Migrate database
+```sh
+(env)$ Python manage.py migrate
+```
+
+#### 4. Run server (localhost)
 ```sh
 (env)$ Python manage.py runserver
 ```
